@@ -1,21 +1,15 @@
 <?php
 
-require 'database.php';
+require 'includes/database.php';
 
 $sql = "SELECT * FROM article";
 $results = mysqli_query( $conn, $sql );
 $articles = mysqli_fetch_all( $results, MYSQLI_ASSOC );
 
+require 'includes/header.php'
+
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
-</head>
-<body>
   <h1>My Blog</h1>
   <ul>
     <?php 
@@ -33,5 +27,4 @@ $articles = mysqli_fetch_all( $results, MYSQLI_ASSOC );
       }
     ?>
   </ul>
-</body>
-</html>
+<?php require 'includes/footer.php' ?>
