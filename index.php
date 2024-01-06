@@ -13,4 +13,12 @@ if ( mysqli_connect_error() ) {
   exit;
 }
 
-echo "No Err";
+$sql = "SELECT * FROM article";
+
+$results = mysqli_query( $conn, $sql );
+
+$articles = mysqli_fetch_all( $results );
+
+echo "<pre>";
+var_dump( $articles );
+echo "</pre>";

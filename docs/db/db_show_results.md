@@ -11,3 +11,8 @@ mysqli_query( $connection, $sql );
 
 There are 2 arguments here:
 - `$connection`: the connect information that you have after using the `mysqli_connect`, refer to [How to connect to a MySQL database?](/docs/db/db_connect.md);
+- `$sql`: the query string to get the data.
+
+Now if your `mysqli_query()` call is successful, you will receive an object, if not then you'll receive `FALSE`.
+
+## `mysqli_fetch_[type]` 
