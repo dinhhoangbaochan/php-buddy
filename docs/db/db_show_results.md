@@ -16,3 +16,8 @@ There are 2 arguments here:
 Now if your `mysqli_query()` call is successful, you will receive an object, if not then you'll receive `FALSE`.
 
 ## `mysqli_fetch_[type]` 
+`mysqli_fetch` is a kind of functions that you use to `fetch` all the data in different `types`. In PHP, there are 4 types of fetching:
+- `mysqli_fetch_array()`.
+- `mysqli_fetch_assoc()`.
+- `mysqli_fetch_row()`.
+- `mysqli_fetch_object()`.

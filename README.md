@@ -13,7 +13,7 @@ Don't get me wrong, PHP is obviously capable of building something complex, but 
 
 I will list down here the content list of all doc that I've written in `docs` folder.
 
-| File name                            | Description                                                                       |
-|--------------------------------------|-----------------------------------------------------------------------------------|
-| [db_connect](/docs/db/db_connect.md) | Instruction on how to connect to a MySQL database, using PHP.                     |
+| File name                                      | Description                                                                       |
+|------------------------------------------------|-----------------------------------------------------------------------------------|
+| [db_connect](/docs/db/db_connect.md)           | Instruction on how to connect to a MySQL database, using PHP.                     |
 | [db_show_results](/docs/db/db_show_results.md) | Instruction on how to query something in your database and show it to the screen. |
