@@ -8,15 +8,26 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
   $post_content = $_POST['content'];
   $post_publish_date = $_POST['published_at'];
   
-  $sql = "INSERT INTO article (title, content, published_at) VALUES ('{$post_title}', '{$post_content}', '{$post_publish_date}')";
-  var_dump($sql);
-  $query = mysqli_query( $conn, $sql );
+  $sql = "INSERT INTO article (title, content, published_at) 
+          VALUES (?, ?, ?)";
 
-  if ( $query === false ) {
+  $prepared_statement = mysqli_prepare($conn, $sql);  
+
+  if ( $prepared_sql === false ) {
+
     echo mysqli_error($conn);
+
   } else {
-    $id = mysqli_insert_id($conn);
-    echo $id;
+
+    mysqli_stmt_bind_param( $prepared_statement, "sss", $post_title, $post_content, $post_publish_date );
+
+    if ( mysqli_stmt_execute( $prepared_statement ) ) {
+      $id = mysqli_insert_id($conn);
+      echo $id;
+    } else {
+      echo mysqli_stmt_error( $prepared_statement );
+    }
+
   }
 }
 
