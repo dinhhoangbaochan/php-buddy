@@ -4,6 +4,8 @@ require 'includes/database.php';
 require 'includes/header.php';
 
 if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+  $conn = get_db();
+  
   $post_title = $_POST['title'];
   $post_content = $_POST['content'];
   $post_publish_date = $_POST['published_at'];

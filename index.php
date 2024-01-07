@@ -2,6 +2,7 @@
 
 require 'includes/database.php';
 
+$conn = get_db();
 $sql = "SELECT * FROM article";
 $results = mysqli_query( $conn, $sql );
 $articles = mysqli_fetch_all( $results, MYSQLI_ASSOC );
