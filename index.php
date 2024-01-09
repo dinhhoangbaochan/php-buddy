@@ -10,8 +10,6 @@ $articles = mysqli_fetch_all( $results, MYSQLI_ASSOC );
 
 require 'includes/header.php';
 
-var_dump(Auth::isLoggedIn());
-
 ?>
 
   <h1>My Blog</h1>
