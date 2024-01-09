@@ -1,6 +1,6 @@
 # PHP Buddy - My PHP Blog
 
-Well, after 5 years of working as a PHP developer, I finally got my first PHP certificate. And though it's just a course completion certificate, still it's my first dev certificate. This repository is a blog that I make to revise my whole learning process, following the course that I learned.
+Well, after 5 years of working as a PHP developer, I finally got my first PHP certificate. And though it's just a course completion certificate, still it's my first dev certificate. This repository is a blog that I make to revise my whole learning process, following the course that I learned and based on that, I have tried to add more features and my own marks to the project.
 
 If you are a PHP beginner, this repository is a perfect start for you to learn PHP, because it's your `#PHP Buddy` (LOL).
 
